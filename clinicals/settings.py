@@ -29,7 +29,8 @@ SECRET_KEY = "django-insecure-9o%e52lg)z*_)eq%a4fi*r1h@$m-1ff125#87tq@p_%r91(8*)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ec2-35-171-22-102.compute-1.amazonaws.com', 'http://127.0.0.1/']
 
 
 # Application definition
@@ -83,7 +84,8 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "clinicalsdb",
         "USER": "root",
-        "PASSWORD": "bardisql22"
+        "PASSWORD": "bardisql22",
+        "HOST": "docker-mysql",
     }
 }
 
